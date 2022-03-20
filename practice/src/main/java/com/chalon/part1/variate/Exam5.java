@@ -1,6 +1,8 @@
 package com.chalon.part1.variate;
 
 /**
+ * 2,1,5
+ * 1,1,5
  * @author wei.peng
  */
 public class Exam5 {

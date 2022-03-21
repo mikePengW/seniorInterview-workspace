@@ -179,7 +179,67 @@
 
 - 生产者和消费者案例，运用等待唤醒机制，为了避免虚假唤醒问题，object.wait() 方法应该总是使用在循环中，详见地址中相应方法：https://www.matools.com/file/manual/jdk_api_1.8_google/java/lang/Object.html
 
+##### 七、Condition 控制线程通信
 
+- Condition 接口描述了可能会与锁有关联的条件变量。这些变量在用法上与使用 Object.wait 访问的隐式监视器类似，但提供了更强大的功能。需要特别指出的是，单个 Lock 可能与多个 Condition 对象关联。为了避免兼容性问题，Condition 方法的名称与对应的 Object 版本中的不同。
+
+- 在 Condition 对象中，与 wait、notify 和 notifyAll 方法对应的分别是 await、signal 和 signalAll。
+
+- Condition 实例实质上被绑定到一个锁上。要为特定 Lock 实例获得 Condition 实例，请使用其 newCondition() 方法。
+
+  ```java
+  public class TestProducerAndConsumerForLock {
+      public static void main(String[] args) {
+          Clerk clerk = new Clerk();
+          Producer pro = new Producer(clerk);
+          Consumer cus = new Consumer(clerk);
+          new Thread(pro, "生产者 A").start();
+          new Thread(cus, "消费者 B").start();
+          new Thread(pro, "生产者 C").start();
+          new Thread(cus, "消费者 D").start();
+      }
+  }
+  // 店员
+  class Clerk {
+      private int product = 0;
+      private Lock lock = new ReentrantLock();
+      private Condition condition = lock.newCondition();
+      // 进货
+      public void get() { // 循环次数：0
+          lock.lock();
+          try {
+              while (product >= 1) { // 运用等待唤醒机制，为了避免虚假唤醒问题，应该总是使用在循环中
+                  System.out.println("产品已满！");
+                  try {
+                      condition.await();
+                  } catch (InterruptedException e) {
+                  }
+              }
+              System.out.println(Thread.currentThread().getName() + " : " + ++product);
+              condition.signalAll();
+          } finally {
+              lock.unlock();
+          }
+      }
+      // 卖货
+      public void sale() { // product = 0; 循环次数：0
+          lock.lock();
+          try {
+              while (product <= 0) {
+                  System.out.println("缺货！");
+                  try {
+                      condition.await();
+                  } catch (InterruptedException e) {
+                  }
+              }
+              System.out.println(Thread.currentThread().getName() + " : " + --product);
+              condition.signalAll();
+          } finally {
+              lock.unlock();
+          }
+      }
+  }
+  ```
 
 
 

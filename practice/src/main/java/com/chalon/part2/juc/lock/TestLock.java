@@ -1,4 +1,4 @@
-package com.chalon.part2.juc;
+package com.chalon.part2.juc.lock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

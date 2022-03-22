@@ -1,4 +1,4 @@
-[juc笔记文件pdf](../../../../../resource/files/Java JUC.pdf)
+[juc笔记文件pdf](../../../../../resources/files/Java JUC.pdf)
 
 ##### 一、volatile关键字，内存可见性问题
 

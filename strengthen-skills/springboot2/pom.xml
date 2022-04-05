@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>strengthen-skills</artifactId>
+        <groupId>com.chalon</groupId>
+        <version>tobenumber1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springboot2</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>adminserver</module>
+        <module>features-profile</module>
+        <module>helloworld</module>
+        <module>web-admin</module>
+        <module>chalon-hello-spring-boot-starter</module>
+        <module>chalon-hello-spring-boot-starter-autoconfigure</module>
+        <module>boot-hello-test</module>
+        <module>common</module>
+
+    </modules>
+
+</project>

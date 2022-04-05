@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.6</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <name>strengthen-skills</name>
+    <groupId>com.chalon</groupId>
+    <artifactId>strengthen-skills</artifactId>
+    <version>tobenumber1</version>
+    <packaging>pom</packaging>
+    <description>Strengthen Skills To Be Number 1.</description>
+
+    <modules>
+        <module>java8</module>
+        <module>java9</module>
+        <module>javadatastructuresandalgorithms</module>
+        <module>javadesignpatterns</module>
+        <module>javanio1</module>
+        <module>javanio2</module>
+        <module>javasafestring</module>
+        <module>jdbc</module>
+        <module>jpa</module>
+        <module>juc1</module>
+        <module>juc2</module>
+        <module>jvm</module>
+        <module>mybatis</module>
+        <module>mybatisplus</module>
+        <module>mysql</module>
+        <module>netty</module>
+        <module>question1</module>
+        <module>question2</module>
+        <module>question3</module>
+        <module>rbac</module>
+        <module>redis</module>
+        <module>redis6</module>
+        <module>sentinel</module>
+        <module>shiro</module>
+        <module>spring4</module>
+        <module>spring5</module>
+        <module>springannotation</module>
+        <module>springboot2</module>
+        <module>springcloud1</module>
+        <module>springcloud2</module>
+        <module>springdata</module>
+        <module>springmvc</module>
+        <module>springsecurity</module>
+        <module>gulimall</module>
+
+    </modules>
+
+</project>

@@ -1,0 +1,8 @@
+org.springframework.context.ApplicationContextInitializer=\
+  com.chalon.boot.listener.MyApplicationContextInitializer
+
+org.springframework.context.ApplicationListener=\
+  com.chalon.boot.listener.MyApplicationListener
+
+org.springframework.boot.SpringApplicationRunListener=\
+  com.chalon.boot.listener.MySpringApplicationRunListener

@@ -1,0 +1,60 @@
+spring:
+  mvc:
+    contentnegotiation:
+      favor-parameter: true
+  datasource:
+    url:
+    druid:
+      filter:
+        stat:
+          slow-sql-millis: 1000
+          log-slow-sql: true
+          enabled: true
+        wall:
+          enabled: true
+  redis:
+    client-type: jedis
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
+        instance:
+          prefer-ip: true # 使用ip注册进来
+  application:
+    name: base-common
+
+
+# 配置mybatis规则
+mybatis:
+  #  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath*:mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+# management 是所有 actuator 的配置
+# management.endpoint.端点名.xxx 对某个端点的具体配置
+management:
+  endpoints:
+    enabled-by-default: true # 默认开启所有监控端点 true
+    web:
+      exposure:
+        include: '*' # 以web方式暴露所有端点
+  endpoint:
+    health:
+      show-details: always
+      enabled: true
+
+    info:
+      enabled: true
+
+    beans:
+      enabled: true
+
+    metrics:
+      enabled: true
+
+info:
+  appName: boot-admin
+  appVersion: 1.0.0
+  mavenProjectName: @project.artifactId@
+  mavenProjectVersion: @project.version@

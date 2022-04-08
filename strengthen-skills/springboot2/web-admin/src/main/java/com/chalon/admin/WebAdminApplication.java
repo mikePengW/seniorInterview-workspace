@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
-@MapperScan("com.atguigu.admin.mapper")
-@ServletComponentScan(basePackages = "com.atguigu.admin")
+@MapperScan("com.chalon.admin.mapper")
+@ServletComponentScan(basePackages = "com.chalon.admin")
 @SpringBootApplication(exclude = RedisAutoConfiguration.class)
 public class WebAdminApplication {
 

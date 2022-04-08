@@ -1,9 +1,9 @@
-package com.chalon.service.impl;
+package com.chalon.boot.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chalon.bean.City;
-import com.chalon.mapper.CityMapper;
-import com.chalon.service.CityService;
+import com.chalon.boot.bean.City;
+import com.chalon.boot.mapper.CityMapper;
+import com.chalon.boot.service.CityService;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.beans.factory.annotation.Autowired;

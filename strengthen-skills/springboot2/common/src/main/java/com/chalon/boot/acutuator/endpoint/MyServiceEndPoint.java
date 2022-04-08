@@ -1,4 +1,4 @@
-package com.chalon.acutuator.endpoint;
+package com.chalon.boot.acutuator.endpoint;
 
 import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;

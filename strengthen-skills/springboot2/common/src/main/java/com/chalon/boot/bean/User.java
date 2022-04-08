@@ -1,4 +1,4 @@
-package com.chalon.bean;
+package com.chalon.boot.bean;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;

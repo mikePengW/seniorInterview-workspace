@@ -1,4 +1,4 @@
-package com.chalon.config;
+package com.chalon.boot.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

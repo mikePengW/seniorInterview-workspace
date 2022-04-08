@@ -1,4 +1,4 @@
-package com.chalon.exception;
+package com.chalon.boot.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;

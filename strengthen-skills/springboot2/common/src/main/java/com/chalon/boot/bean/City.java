@@ -1,4 +1,4 @@
-package com.chalon.bean;
+package com.chalon.boot.bean;
 
 import lombok.Data;
 

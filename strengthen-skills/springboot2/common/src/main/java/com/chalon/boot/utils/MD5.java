@@ -1,4 +1,4 @@
-package com.chalon.utils;
+package com.chalon.boot.utils;
 
 /**
  * @author wei.peng

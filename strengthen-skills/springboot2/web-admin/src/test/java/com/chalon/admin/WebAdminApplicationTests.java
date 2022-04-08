@@ -1,7 +1,7 @@
 package com.chalon.admin;
 
-import com.atguigu.admin.bean.User;
-import com.atguigu.admin.mapper.UserMapper;
+import com.chalon.admin.bean.User;
+import com.chalon.admin.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

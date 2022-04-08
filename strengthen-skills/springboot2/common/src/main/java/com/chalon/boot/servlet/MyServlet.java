@@ -1,4 +1,4 @@
-package com.chalon.servlet;
+package com.chalon.boot.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

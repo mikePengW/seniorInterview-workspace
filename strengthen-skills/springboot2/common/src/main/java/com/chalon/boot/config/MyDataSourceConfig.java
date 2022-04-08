@@ -1,4 +1,4 @@
-package com.chalon.config;
+package com.chalon.boot.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;

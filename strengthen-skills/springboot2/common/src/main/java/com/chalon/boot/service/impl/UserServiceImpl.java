@@ -1,9 +1,9 @@
-package com.chalon.service.impl;
+package com.chalon.boot.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chalon.bean.User;
-import com.chalon.mapper.UserMapper;
-import com.chalon.service.UserService;
+import com.chalon.boot.bean.User;
+import com.chalon.boot.mapper.UserMapper;
+import com.chalon.boot.service.UserService;
 import org.springframework.stereotype.Service;
 
 /**

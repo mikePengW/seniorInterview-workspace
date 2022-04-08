@@ -1,6 +1,6 @@
-package com.chalon.converter;
+package com.chalon.boot.converter;
 
-import com.chalon.bean.Person;
+import com.chalon.boot.bean.Person;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.HttpOutputMessage;
 import org.springframework.http.MediaType;

@@ -1,7 +1,7 @@
-package com.chalon.mapper;
+package com.chalon.boot.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.chalon.bean.City;
+import com.chalon.boot.bean.City;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;

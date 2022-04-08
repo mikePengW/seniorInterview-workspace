@@ -30,7 +30,7 @@ spring:
 
 
     druid:
-      aop-patterns: com.atguigu.admin.*  #springbean监控
+      aop-patterns: com.chalon.admin.*  #springbean监控
       filters: stat,wall,slf4j  #所有开启的功能
 
       stat-view-servlet:  #监控页配置

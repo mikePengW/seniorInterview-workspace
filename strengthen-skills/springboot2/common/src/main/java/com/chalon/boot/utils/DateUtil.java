@@ -1,6 +1,5 @@
-package com.chalon.utils;
+package com.chalon.boot.utils;
 
-import com.google.common.collect.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,10 +11,7 @@ import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalAdjusters;
 import java.time.temporal.TemporalField;
 import java.time.temporal.WeekFields;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 /**
  * @author wei.peng
@@ -358,7 +354,7 @@ public class DateUtil {
      * @return
      */
     public static List<Long[]> getLastTwelveEachMonth() {
-        List<Long[]> months = Lists.newArrayList();
+        List<Long[]> months = new ArrayList<>();
         //
         LocalDate today = LocalDate.now();
         long lastTwelveMonth = 11L;
@@ -378,7 +374,7 @@ public class DateUtil {
      * @return
      */
     public static List<Long[]> getThisYearTwelveEachMonth() {
-        List<Long[]> months = Lists.newArrayList();
+        List<Long[]> months = new ArrayList<>();
         //
         int thisYear = LocalDate.now().getYear();
         int thisYearMonth = 12;

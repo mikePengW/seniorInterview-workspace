@@ -1,6 +1,5 @@
-package com.chalon.acutuator.health;
+package com.chalon.boot.acutuator.health;
 
-import com.google.common.collect.Maps;
 import org.springframework.boot.actuate.health.AbstractHealthIndicator;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.Status;
@@ -22,7 +21,7 @@ public class MyComHealthIndicator extends AbstractHealthIndicator {
     @Override
     protected void doHealthCheck(Health.Builder builder) throws Exception {
         // mongodb 获取连接进行测试
-        HashMap<String, Object> map = Maps.newHashMap();
+        HashMap<String, Object> map = new HashMap<>();
         // 检查完成
         if (1 == 1) {
 //            builder.up(); // 健康

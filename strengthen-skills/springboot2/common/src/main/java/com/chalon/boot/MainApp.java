@@ -1,4 +1,4 @@
-package com.chalon;
+package com.chalon.boot;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.mybatis.spring.annotation.MapperScan;

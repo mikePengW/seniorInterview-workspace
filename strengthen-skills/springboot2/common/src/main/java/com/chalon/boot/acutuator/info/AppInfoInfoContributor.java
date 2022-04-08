@@ -1,4 +1,4 @@
-package com.chalon.acutuator.info;
+package com.chalon.boot.acutuator.info;
 
 import org.springframework.boot.actuate.info.Info;
 import org.springframework.boot.actuate.info.InfoContributor;

@@ -1,4 +1,4 @@
-package com.chalon.servlet;
+package com.chalon.boot.servlet;
 
 import lombok.extern.slf4j.Slf4j;
 

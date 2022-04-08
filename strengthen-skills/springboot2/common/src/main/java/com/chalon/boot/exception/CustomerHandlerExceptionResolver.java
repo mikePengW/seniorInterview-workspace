@@ -1,4 +1,4 @@
-package com.chalon.exception;
+package com.chalon.boot.exception;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

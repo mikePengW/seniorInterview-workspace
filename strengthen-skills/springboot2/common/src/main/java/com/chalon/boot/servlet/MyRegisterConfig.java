@@ -1,4 +1,4 @@
-package com.chalon.servlet;
+package com.chalon.boot.servlet;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.chalon.mapper.CityMapper">
+<mapper namespace="com.chalon.boot.mapper.CityMapper">
 
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
         insert into city(`name`,`state`,`country`) values(#{name},#{state},#{country})

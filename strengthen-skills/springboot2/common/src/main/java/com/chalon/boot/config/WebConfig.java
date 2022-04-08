@@ -1,9 +1,8 @@
-package com.chalon.config;
+package com.chalon.boot.config;
 
-import com.chalon.bean.Pet;
+import com.chalon.boot.bean.Pet;
 import com.chalon.converter.ChalonMessageConverter;
 import com.chalon.interceptor.LoginInterceptor;
-import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +20,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.util.UrlPathHelper;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -82,7 +82,7 @@ public class WebConfig {
             @Override
             public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
                 // Map<String, MediaType> mediaTypes
-                Map<String, MediaType> mediaTypes = Maps.newHashMap();
+                Map<String, MediaType> mediaTypes = new HashMap<>();
                 mediaTypes.put("json", MediaType.APPLICATION_JSON);
                 mediaTypes.put("xml", MediaType.APPLICATION_XML);
                 mediaTypes.put("cl", MediaType.parseMediaType("application/x-chalon"));

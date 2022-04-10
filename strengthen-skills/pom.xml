@@ -45,6 +45,7 @@
         <module>spring4</module>
         <module>spring5</module>
         <module>springannotation</module>
+        <module>springboot1</module>
         <module>springboot2</module>
         <module>springcloud1</module>
         <module>springcloud2</module>

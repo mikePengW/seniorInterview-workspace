@@ -9,19 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.atguigu</groupId>
-    <artifactId>juc2</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>juc2</name>
-    <packaging>jar</packaging>
-    <description>JUC 2.</description>
+    <artifactId>springboot1</artifactId>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>29.0-jre</version>
-        </dependency>
-    </dependencies>
+    <modules>
+<!--        <module></module>-->
+    </modules>
 
 </project>

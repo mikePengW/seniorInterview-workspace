@@ -18,6 +18,7 @@
     <description>Strengthen Skills To Be Number 1.</description>
 
     <modules>
+        <module>flink</module>
         <module>java8</module>
         <module>java9</module>
         <module>javadatastructuresandalgorithms</module>

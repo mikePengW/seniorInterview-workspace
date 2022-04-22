@@ -13,7 +13,9 @@
     <packaging>pom</packaging>
 
     <modules>
-<!--        <module></module>-->
+        <module>acl_parent</module>
+        <module>csrf-security</module>
+        <module>securitydemo1</module>
     </modules>
 
 </project>

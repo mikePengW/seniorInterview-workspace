@@ -13,7 +13,10 @@
     <packaging>pom</packaging>
 
     <modules>
-<!--        <module></module>-->
+        <module>demoreactor</module>
+        <module>webfluxdemo1</module>
+        <module>webfluxdemo2</module>
+        <module>mywebfluxdemo</module>
     </modules>
 
 </project>

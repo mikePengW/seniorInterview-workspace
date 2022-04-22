@@ -20,7 +20,7 @@
         <module>chalon-hello-spring-boot-starter</module>
         <module>chalon-hello-spring-boot-starter-autoconfigure</module>
         <module>boot-hello-test</module>
-        <module>common</module>
+        <module>commixture</module>
 
     </modules>
 

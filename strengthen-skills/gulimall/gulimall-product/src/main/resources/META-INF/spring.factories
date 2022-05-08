@@ -1,8 +1,0 @@
-org.springframework.context.ApplicationContextInitializer=\
-  com.chalon.gulimall.product.listener.MyApplicationContextInitializer
-
-org.springframework.context.ApplicationListener=\
-  com.chalon.gulimall.product.listener.MyApplicationListener
-
-org.springframework.boot.SpringApplicationRunListener=\
-  com.chalon.gulimall.product.listener.MySpringApplicationRunListener

@@ -23,8 +23,7 @@
 
     <modules>
         <module>flink</module>
-        <module>java8</module>
-        <module>java9</module>
+        <module>java8-9</module>
         <module>javadatastructuresandalgorithms</module>
         <module>javadesignpatterns</module>
         <module>javanio1</module>
@@ -32,20 +31,14 @@
         <module>javasafestring</module>
         <module>jdbc</module>
         <module>jpa</module>
-        <module>juc1</module>
-        <module>juc2</module>
-        <module>juc3</module>
+        <module>juc</module>
         <module>jvm</module>
         <module>mybatis</module>
         <module>mybatisplus</module>
         <module>mysql</module>
         <module>netty</module>
-        <module>question1</module>
-        <module>question2</module>
-        <module>question3</module>
         <module>rbac</module>
         <module>redis</module>
-        <module>redis6</module>
         <module>sentinel</module>
         <module>shiro</module>
         <module>spring4</module>

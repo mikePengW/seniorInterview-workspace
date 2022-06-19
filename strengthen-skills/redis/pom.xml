@@ -11,6 +11,7 @@
 
     <artifactId>redis</artifactId>
     <packaging>pom</packaging>
+    <description>redis-redis6</description>
 
     <modules>
 <!--        <module></module>-->

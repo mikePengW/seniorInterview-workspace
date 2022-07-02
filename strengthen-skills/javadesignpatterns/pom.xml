@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>designPattern</module>
+        <module>DesignPattern</module>
     </modules>
 
 </project>

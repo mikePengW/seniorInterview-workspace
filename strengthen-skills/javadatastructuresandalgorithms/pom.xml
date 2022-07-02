@@ -13,7 +13,8 @@
     <packaging>pom</packaging>
 
     <modules>
-<!--        <module></module>-->
+        <module>DataStructures</module>
+        <module>Algorithm</module>
     </modules>
 
 </project>

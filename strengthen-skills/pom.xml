@@ -26,8 +26,6 @@
         <module>java8-9</module>
         <module>javadatastructuresandalgorithms</module>
         <module>javadesignpatterns</module>
-        <module>javanio1</module>
-        <module>javanio2</module>
         <module>javasafestring</module>
         <module>jdbc</module>
         <module>jpa</module>

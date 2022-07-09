@@ -22,6 +22,8 @@ public class MiGong {
         // 设置挡板，1表示
         map[3][1] = 1;
         map[3][2] = 1;
+//        map[1][2] = 1;
+//        map[2][2] = 1;
 
         // 输出地图
         System.out.println("地图的情况：");
@@ -33,7 +35,8 @@ public class MiGong {
         }
 
         // 使用递归回溯给小球找路
-        setWay(map, 1, 1);
+        // setWay(map, 1, 1);
+        setWay2(map, 1, 1);
 
         // 输出新的地图，小球走过，并标识过的地图
         System.out.println("小球走过，并标识过的地图的情况");
@@ -73,6 +76,33 @@ public class MiGong {
                 } else if (setWay(map, i - 1, j)) { // 向上走
                     return true;
                 } else if (setWay(map, i, j - 1)) { // 向左走
+                    return true;
+                } else {
+                    // 说明该点是走不通，是死路
+                    map[i][j] = 3;
+                    return false;
+                }
+            } else { // 如果map[i][j] != 0, 可能是 1, 2, 3
+                return false;
+            }
+        }
+    }
+
+    // 修改找路的策略，改成 上->右->下->左
+    public static boolean setWay2(int[][] map, int i, int j) {
+        if (map[6][5] == 2) { // 通路已经找到ok
+            return true;
+        } else {
+            if (map[i][j] == 0) { // 如果当前这个点还没有走过
+                // 按照策略 下->右->上->左 走
+                map[i][j] = 2; // 嘉定该点是可以走通
+                if (setWay2(map, i - 1, j)) { // 向上走
+                    return true;
+                } else if (setWay2(map, i, j + 1)) { // 向右走
+                    return true;
+                } else if (setWay2(map, i + 1, j)) { // 向下走
+                    return true;
+                } else if (setWay2(map, i, j - 1)) { // 向左走
                     return true;
                 } else {
                     // 说明该点是走不通，是死路

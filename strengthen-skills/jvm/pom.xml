@@ -13,7 +13,10 @@
     <packaging>pom</packaging>
 
     <modules>
-<!--        <module></module>-->
+<!--        <module>JVMDemo</module>-->
+<!--        <module>JVMDemo1</module>-->
+<!--        <module>JVMDemo2</module>-->
+<!--        <module>notes</module>-->
     </modules>
 
 </project>

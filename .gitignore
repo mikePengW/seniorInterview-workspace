@@ -104,17 +104,14 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-strengthen-skills/javadesignpatterns/designPattern/mvnw.cmd
-strengthen-skills/javadesignpatterns/designPattern/mvnw
-strengthen-skills/javadesignpatterns/designPattern/.mvn/wrapper/maven-wrapper.properties
-strengthen-skills/javadesignpatterns/designPattern/.mvn/wrapper/maven-wrapper.jar
 
-*.cmd
-strengthen-skills/netty/nio1/mvnw
-strengthen-skills/netty/nio1/mvnw.cmd
-strengthen-skills/netty/nio1/.mvn/wrapper/maven-wrapper.properties
-strengthen-skills/netty/nio1/.mvn/wrapper/maven-wrapper.jar
+.idea/
+.idea
+out/
+.mvn
+.gitignore
+HELP.md
+mvnw
+mvnw.cmd
+*.iml
 
-
-
-*.jar

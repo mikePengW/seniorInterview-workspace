@@ -48,6 +48,7 @@ public class InsertSort {
                 insertIndex--;
             }
             // 当退出while循环时，说明插入的位置找到，insertIndex + 1
+            // 判断是否需要赋值
             if (insertIndex + 1 != i) {
                 arr[insertIndex + 1] = insertVal;
             }

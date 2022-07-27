@@ -38,6 +38,8 @@ public class GroupChatServer {
 
     // 监听
     public void listen() {
+
+        System.out.println("监听线程：" + Thread.currentThread().getName());
         try {
             // 循环处理
             while (true) {
@@ -118,6 +120,8 @@ public class GroupChatServer {
     // 转发消息给其它客户（通道）
     private void sendInfoToOtherClients(String msg, SocketChannel self) throws IOException {
         System.out.println("服务器转发消息中...");
+        System.out.println("服务器转发数据给客户端线程：" + Thread.currentThread().getName());
+
         // 遍历 所有注册到 selector 上的 SocketChannel，并排除 self
         for (SelectionKey key : selector.keys()) {
             // 通过key 取出对应的 SocketChannel
@@ -138,6 +142,18 @@ public class GroupChatServer {
     public static void main(String[] args) {
         GroupChatServer chatServer = new GroupChatServer();
         chatServer.listen();
+
+    }
+
+}
+
+// 可以写一个Handler
+class MyHandler {
+    public void readData() {
+
+    }
+
+    public void sendInfoToOtherClients() {
 
     }
 

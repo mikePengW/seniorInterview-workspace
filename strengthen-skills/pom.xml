@@ -22,6 +22,7 @@
     </properties>
 
     <modules>
+        <module>code-demo-example</module>
         <module>flink</module>
         <module>java8-9</module>
         <module>javadatastructuresandalgorithms</module>
@@ -31,6 +32,7 @@
         <module>jpa</module>
         <module>juc</module>
         <module>jvm</module>
+        <module>lock</module>
         <module>mybatis</module>
         <module>mybatisplus</module>
         <module>mysql</module>

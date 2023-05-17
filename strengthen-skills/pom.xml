@@ -40,6 +40,8 @@
         <module>rbac</module>
         <module>redis</module>
         <module>sentinel</module>
+        <module>shardingSphere1</module>
+        <module>shardingSphere2</module>
         <module>shiro</module>
         <module>spring4</module>
         <module>spring5</module>

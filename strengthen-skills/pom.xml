@@ -29,6 +29,7 @@
         <module>javadesignpatterns</module>
         <module>javasafestring</module>
         <module>jdbc</module>
+        <module>jdk</module>
         <module>jpa</module>
         <module>juc</module>
         <module>jvm</module>

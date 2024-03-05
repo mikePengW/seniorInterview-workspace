@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>springboot2</artifactId>
+        <artifactId>flink</artifactId>
         <groupId>com.chalon</groupId>
         <version>tobenumber1</version>
     </parent>

@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
 
     <modules>
+<!--        <module>JVMdachang</module>-->
 <!--        <module>JVMDemo</module>-->
 <!--        <module>JVMDemo1</module>-->
 <!--        <module>JVMDemo2</module>-->

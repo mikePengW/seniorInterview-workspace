@@ -1,5 +1,7 @@
 package com.chalon.boot.question;
 
+import org.junit.Test;
+
 import javax.annotation.PostConstruct;
 import java.io.File;
 import java.util.ArrayList;
@@ -33,6 +35,12 @@ public class Question1 {
         }
     }
 
-
+    @Test
+    public void printTest() {
+        String rootPath = "/data/";
+        List<String> allFileNames = new ArrayList<>();
+        getAllFileNames(rootPath, allFileNames);
+        allFileNames.forEach(System.out::println);
+    }
 
 }
